@@ -1,0 +1,17 @@
+<form [formGroup]="cadastroForm" (ngSubmit)="onSubmit()">
+  <h2>Cadastro</h2>
+
+  <label>Nome</label>
+  <input formControlName="nome" />
+
+  <label>Data de Nascimento</label>
+  <input type="date" formControlName="dataNascimento" />
+
+  <label>Telefone</label>
+  <input formControlName="telefone" />
+
+  <label>Endereço</label>
+  <input formControlName="endereco" />
+
+  <button type="submit">Cadastrar</button>
+</form>
